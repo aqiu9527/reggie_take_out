@@ -73,8 +73,8 @@ public class CategoryController {
 
         log.info("删除分类，id为{}",ids);
 
-        categoryService.removeById(ids);
-
+//        categoryService.removeById(ids);
+        categoryService.remove(ids);
         return R.success("分类删除成功");
 
     }
